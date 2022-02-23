@@ -1,0 +1,117 @@
+/* Modal */
+.modal{
+    --gap : 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: var(--gap);
+    background: rgba(0,0,0,0.5);
+    font: 500 1rem 'Quicksand', sans-serif;;
+  }
+  
+  .modal--inner{
+    background: #fff;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  .modal--top{
+    display: flex;
+    align-items: center;
+    background-color: #2696ff;
+  }
+  .modal--title{
+    flex-grow: 1;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+  }
+  .modal--close{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: var(--gap);
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .modal--content{
+     padding: 25 var(--gap);
+     line-height: 1.5;
+  }
+  
+  .modal--bottom{
+    text-align: right;
+    padding: 0 var(--gap) var(--gap) var(--gap);
+  }
+  .modal--button{
+    display: inline-block;
+    padding: 5px 12px;
+    margin-left: 10px;
+    background: none;
+    border: none;
+    outline: none;
+    background-color: #2696ff;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+  
+  }
+  .modal--button.close{
+
+    background-color: grey;
+
+  
+  }
+  .modal--button:hover{
+    background-color: #005780;
+  
+  }
+
+
+  .collapsible {
+    background-color: white;
+    border: 1px solid #555;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+    color: white;
+
+  }
+
+  .content {
+    padding: 0 18px;
+    background-color: white;
+    border: 1px solid #555;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  
+
+.content,.collapsible{
+  border: 1px solid gray;
+}
+.collapsible:hover {
+  background-color: gray;
+  color: white;
+}

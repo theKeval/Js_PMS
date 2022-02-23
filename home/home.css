@@ -1,0 +1,92 @@
+  body{
+    margin: 0;
+  }
+
+
+  /*  Project list  */
+  .projectContainer{
+    padding: 20px 16px;
+    
+  }
+
+  .projectContainer h2{
+    margin-left: 1rem;
+  }
+
+  .listContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+    justify-content: center;
+    margin: 1em 0;
+    padding: 20px;
+    height: 100%;
+  }  
+.projectList{
+    width: 100%;
+    height: 100%;
+
+    padding-left: 0;
+}
+
+.projectItem {
+  list-style: none;
+  display: inline-block;
+  width: 28%;
+  align-self: start;
+  text-align: justify;
+  margin: 8px 2%;
+  padding: 5px;
+  padding-top: 20px;
+  border-radius: 5px;
+}
+
+.projectItem.inProgress{
+  background-color: gray;
+}
+.projectItem.completed{
+  background-color: #00bb64;
+}
+.projectItem .title{
+  font-size: 20px;
+  color: #ffffff;
+  padding-left: 0.7rem;
+  /* font-style: oblique; */
+}
+.itemContent{
+  margin-top: 10px;
+  background-color: white;
+  padding: 10px 10px 5px 10px;
+}
+
+
+.endBtn{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.btn-action{
+  background-color: transparent;
+  border: transparent;
+  border-radius: 50%;
+  margin: 0 10px;
+  padding: 20px ;
+  color: gray;
+  cursor: pointer;
+}
+.btn-action:hover{
+  background-color: #ddd;
+  color: gray
+}
+
+.btn-action.blue{
+  color: #2696ff;
+  
+}
+
+.endLabel{
+  margin: 0 10px;
+  padding: 20px ;
+}
